@@ -5,6 +5,7 @@ import Hello from './components/Hello';
 import Listado from './components/Listado';
 import Listado2 from './components/Listado2';
 import Usuario from './components/Usuario';
+import Menu from './components/Menu';
 
 
 function App() {
@@ -12,7 +13,10 @@ function App() {
 
   return (
     <div className='container'>
-      <Usuario/>
+      <div className='jumbotron'>
+        <h1> Ejemplo de select con hooks</h1>
+      </div>
+      <Menu/>
     </div>
   );
 } 
