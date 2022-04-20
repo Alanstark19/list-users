@@ -32,12 +32,18 @@ function MenuMaterias2 () {
     console.log(mat);
 
 
-    const [matHorario, setMatHorario] = React.useState('ingreso');
+    const [matHorario, setMatHorario] = React.useState('0');
     const capturarHorario = (e) => {
         setMatHorario(e.target.value);
     }
     console.log(matHorario);
 
+    //validar la seleccion
+    const evaluar = ()=>{
+        if(mat == 0 && matHorario == 0){
+            console.log("eh incorrecto jajaj");
+        }
+    }
 
 //onclick es el manejador de
     return (
@@ -70,7 +76,9 @@ function MenuMaterias2 () {
         </div> 
       <div className='container-fluid'>
         <br/>
-        <button type='button' className='btn btn-success'
+        <p>{mat +" "+ matHorario}</p>
+        <button onClick={evaluar} type='button' className='btn btn-success'
+        
         > Agregar Materia</button>
       </div>
        
