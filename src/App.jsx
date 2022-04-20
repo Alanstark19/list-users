@@ -6,6 +6,9 @@ import Listado from './components/Listado';
 import Listado2 from './components/Listado2';
 import Usuario from './components/Usuario';
 import Menu from './components/Menu';
+import MenuMaterias from './components/Menu2';
+import MenuMaterias2 from './components/MenuMaterias2';
+
 
 
 function App() {
@@ -16,7 +19,7 @@ function App() {
       <div className='jumbotron'>
         <h1> Ejemplo de select con hooks</h1>
       </div>
-      <Menu/>
+      <MenuMaterias2/>
     </div>
   );
 } 
